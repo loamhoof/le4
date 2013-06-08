@@ -1,0 +1,27 @@
+
+<div class="modal-header">
+  <button data-dismiss="modal" aria-hidden="true" class="close">X</button>
+  <h3>Machine edition</h3>
+</div>
+<div class="modal-body">
+  <form>
+    <fieldset>
+      <label>Mac
+        <input id="modal_machine_mac" type="text" required="true" pattern="^(?:[0-9a-fA-F]{2}[-: ,;.]?){6}$"/>
+      </label>
+      <label>Type
+        <select id="modal_machine_type">
+          <option value="PC">PC</option>
+          <option value="AP">AP</option>
+        </select>
+      </label>
+      <label>Alias
+        <input id="modal_machine_alias" type="text"/>
+      </label>
+    </fieldset>
+  </form>
+</div>
+<div class="modal-footer">
+  <button id="modal_machine_save" class="btn btn-primary">Save changes</button>
+  <button id="modal_machine_destroy" class="btn btn-danger">Delete</button>
+</div>

@@ -1,0 +1,25 @@
+.row-fluid
+	.span3
+		img.img-polaroid(src="{{img}}")
+	.span4
+		h3 {{lastName}} {{firstName}}
+		p Promo: {{promo}}
+		p Chambre: {{room}}
+		p Ajouté le: {{dateAdded}}
+		p Dernière connexion le: {{lastConnexion}}
+	.row-fluid
+		h4 Autorisations en attente:
+		h4 Machines:
+		table.table.table-hover
+			thead
+				tr
+					th Name
+					th Alias
+					th IP
+					th Mac
+					th Date ajout
+					th Type
+					th Action
+			tbody
+				tr
+					td(colspan="7")
